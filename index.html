@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A personal website to upload content, give feedback, and connect via social media." />
+  <meta name="keywords" content="personal website, file upload, social media, feedback, connect" />
+  <meta name="author" content="Your Name" />
+  <!-- Optional: Uncomment and update base URL if using absolute paths -->
+  <!-- <base href="https://yourdomain.com/"> -->
+
+  <title>My HTML Site</title>
+
+  <style>
+    body {
+      color: brown;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: rgb(88, 45, 175);
+      font-size: 60px;
+    }
+    button {
+      background-color: rgb(88, 45, 175);
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      cursor: pointer;
+    }
+    .social-icons img {
+      width: 40px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome</h1>
+
+  <p>Welcome to my website. This is the home page.</p>
+
+  <label for="feedback">Feedback:</label><br>
+  <textarea id="feedback" placeholder="Kindly provide your feedback!" rows="4" cols="50"></textarea>
+  <br><br>
+
+  <button onclick="alert('Thank you for subscribing!')">Subscribe!</button>
+
+  <br><br>
+  <img src="myimage.jpg" alt="My personal image or logo" width="600" height="600" />
+
+  <h2>Share Your Content</h2>
+
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file">Upload file (video, image, document):</label><br>
+    <input type="file" name="file" id="file" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.mp4,.mp3,.txt" required><br><br>
+
+    <label for="info">Share your information:</label><br>
+    <textarea name="info" id="info" rows="5" cols="50" placeholder="Type your message here..." required></textarea><br><br>
+
+    <button type="submit">Post</button>
+  </form>
+
+  <h3>Browse All Uploaded Files:</h3>
+  <a href="list-files.php" target="_blank">Click here to view uploaded content</a>
+
+  <h3>🧮 Use Scientific Calculator:</h3>
+  <a href="calculator.html" target="_blank">Open Calculator</a>
+
+  <h3>Connect with us on Social Media</h3>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"/></a>
+    <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"/></a>
+    <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"/></a>
+    <a href="https://tiktok.com" target="_blank"><img src="tiktok.png" alt="TikTok"/></a>
+  </div>
+
+</body>
+</html>
